@@ -6,12 +6,12 @@ import { Subscribe } from "./components/Subscribe";
 import { MyModal } from "./components/Modal";
 import { Slide } from "./components/Slide";
 import { SocialLinks } from "./components/SocialLinks";
-import { v4 as uuidv4 } from "uuid";
 import { Select } from "./components/Select";
 import { MyPopover } from "./components/Popover";
 import { MyTabs } from "./components/Tabs";
 import { SignIn } from "./components/SignIn";
 import { Autocomplete } from "./components/Autocomplete";
+import { Card } from "./components/Card";
 
 const dataChart = [
   { name: "1", value: 27 },
@@ -21,77 +21,11 @@ const dataChart = [
   { name: "5", value: 13 },
 ];
 
-const dataCard = [
-  {
-    id: uuidv4(),
-    title: "Doguinho Dev Jr.",
-    img: "/devdog.jpg",
-    href: "#",
-    alt: "Card Container",
-    icon: "",
-  },
-  {
-    id: uuidv4(),
-    title: "Doguinho Dev Jr.",
-    img: "/devdog.jpg",
-    href: "#",
-    alt: "Card Container",
-    icon: "",
-  },
-  {
-    id: uuidv4(),
-    title: "Doguinho Dev Jr.",
-    img: "/devdog.jpg",
-    href: "#",
-    alt: "Card Container",
-    icon: "",
-  },
-  {
-    id: uuidv4(),
-    title: "Doguinho Dev Jr.",
-    img: "/devdog.jpg",
-    href: "#",
-    alt: "Card Container",
-    icon: "",
-  },
-  {
-    id: uuidv4(),
-    title: "Doguinho Dev Jr.",
-    img: "/devdog.jpg",
-    href: "#",
-    alt: "Card Container",
-    icon: "",
-  },
-  {
-    id: uuidv4(),
-    title: "Doguinho Dev Jr.",
-    img: "/devdog.jpg",
-    href: "#",
-    alt: "Card Container",
-    icon: "",
-  },
-  {
-    id: uuidv4(),
-    title: "Doguinho Dev Jr.",
-    img: "/devdog.jpg",
-    href: "#",
-    alt: "Card Container",
-    icon: "",
-  },
-  {
-    id: uuidv4(),
-    title: "Doguinho Dev Jr.",
-    img: "/devdog.jpg",
-    href: "#",
-    alt: "Card Container",
-    icon: "",
-  },
-];
-
 export function App() {
   return (
     <div className="flex wrapper flex-col justify-center gap-10">
       <Container>
+        <Card/>
         <div className="flex flex-col gap-10">
           <SignIn />
           <Subscribe />
@@ -112,7 +46,7 @@ export function App() {
           <MyDisclosure />
         </div>
 
-        <Slide data={dataCard} />
+        <Slide />
         <MyTabs />
         <Autocomplete />
         <ChartPie data={dataChart} />
