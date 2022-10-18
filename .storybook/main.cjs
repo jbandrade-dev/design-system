@@ -1,12 +1,4 @@
 module.exports = {
-  webpackFinal: async (config, { configType }) => {
-    config.optimization = {
-      minimize: false,
-      minimizer: [],
-    };
-
-    return config;
-  },
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
     "@storybook/addon-links",
@@ -22,7 +14,7 @@ module.exports = {
     storyStoreV7: true,
     interactionsDebugger: true,
   },
-  staticDirs: ['../public'],
+  staticDirs: ["../public"],
   viteFinal: (config, { configType }) => {
     if (configType === "PRODUCTION") {
       config.base = "/design-system/";

@@ -4,7 +4,7 @@ import { Text } from "./Text";
 export function Card() {
   return (
     <div className="bg-gray-100 rounded overflow-hidden">
-      <img className="w-full" src="/devdog.jpg" alt="DevDog" />
+      <img className="w-full" src="./devdog.jpg" alt="DevDog" />
 
       <div className="grid p-4 gap-3">
         <Heading size="sm" className="text-gray-900">

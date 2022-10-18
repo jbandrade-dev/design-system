@@ -100,7 +100,7 @@ export function Slide() {
         clickable: true,
       }}
       modules={[FreeMode, Pagination]}
-      className="mySwiper mob:flex tablet:flex pc:flex mt-10"
+      className="mySwiper mob:flex tablet:flex pc:flex"
     >
       {data.map((dataCard) => {
         return (
