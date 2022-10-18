@@ -1,26 +1,25 @@
 import { Popover, Transition } from "@headlessui/react";
 import { CaretDown } from "phosphor-react";
 import { Fragment } from "react";
-import { Text } from "./Text";
 
 const solutions = [
   {
     name: "banana",
     description: "Duas por dia, 14 por semana.",
     href: "##",
-    icon: "/banana.png",
+    icon: "./banana.png",
   },
   {
     name: "maça",
     description: "Uma por dia, 7 por semana.",
     href: "##",
-    icon: "/maca.png",
+    icon: "./maca.png",
   },
   {
     name: "mamão",
     description: "Meia unidade, 3x por semana.",
     href: "##",
-    icon: "/mamao.png",
+    icon: "./mamao.png",
   },
 ];
 
