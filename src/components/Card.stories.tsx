@@ -25,6 +25,11 @@ export default {
         disable: true,
       },
     },
+    data: {
+      table: {
+        disable: true,
+      },
+    },
   },
 } as Meta;
 

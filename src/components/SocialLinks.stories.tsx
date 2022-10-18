@@ -5,7 +5,10 @@ import { SocialLinks } from "./SocialLinks";
 export default {
   title: "Components/SocialLinks",
   component: SocialLinks,
-  args: {},
+  args: {
+    size: '32',
+    tailwind: 'flex gap-1'
+  },
   argTypes: {},
 } as Meta;
 

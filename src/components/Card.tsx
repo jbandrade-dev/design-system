@@ -1,22 +1,13 @@
 import { ReactNode } from "react";
 
-interface CardProps {
+export interface CardProps {
   children: ReactNode;
   className?: string;
-  data: {
-    id: string;
-    title: string;
-    text: string;
-    img: string;
-    href: string;
-    alt: string;
-    icon: string;
-  };
 }
 
-export function Card({ data, children, className}: CardProps) {
+export function Card({ children, className}: CardProps) {
   return (
-    <div className="bg-gray-800 max-w-sm">
+    <div className="bg-gray-800 rounded overflow-hidden max-w-sm">
       {children}
     </div>
   );

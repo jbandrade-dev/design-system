@@ -54,18 +54,21 @@ export function MyPopover() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute left-1/3 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
+              <Popover.Panel className="absolute  pc:left-1/4 mob:left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 mob:px-0 pc:max-w-xl mob:max-w-[300px]">
                 <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                  <div className="relative grid gap-8 bg-gray-800 p-7 lg:grid-cols-2">
+                  <div className="relative grid gap-8 bg-gray-800 p-6 mob:grid-cols-1 pc:grid-cols-2">
                     {solutions.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-cyan-300 text-gray-100 hover:text-black focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                       >
-                        <div className="flex h-10 w-10 shrink-0 items-center justify-center sm:h-12 sm:w-12">
-                          <img src={item.icon} aria-hidden="true" />
-                        </div>
+                        <img
+                          className="w-9 h-9"
+                          src={item.icon}
+                          aria-hidden="true"
+                        />
+
                         <div className="grid ml-4">
                           <span className="text-sm">{item.name}</span>
                           <span className="text-xs text-gray-500">
@@ -75,10 +78,10 @@ export function MyPopover() {
                       </a>
                     ))}
                   </div>
-                  <div className="bg-gray-800 p-4">
+                  <div className="bg-gray-700 p-4">
                     <a
                       href="##"
-                      className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-cyan-300 text-gray-100 hover:text-black focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                      className="flow-root rounded-md px-2 transition duration-150 ease-in-out hover:bg-cyan-300 text-gray-100 hover:text-black focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
                       <span className="flex text-sm items-center">
                         Salada de frutas

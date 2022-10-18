@@ -86,10 +86,6 @@ const data = [
 
 
 export function Slide() {
-  const dataCard = data.map((item) => {
-    return item;
-  });
-
   return (
     <Swiper
       spaceBetween={16}
@@ -114,13 +110,13 @@ export function Slide() {
       modules={[FreeMode, Pagination]}
       className="mySwiper mob:flex tablet:flex pc:flex"
     >
-      {dataCard.map((data) => {
+      {data.map((item) => {
         return (
-          <SwiperSlide className="mb-11" key={data.id}>
-            <Card data={data}>
-              <img src={data.img} alt={data.alt} />
+          <SwiperSlide className="mb-11" key={item.id}>
+            <Card>
+              <img src={item.img} alt={item.alt} />
               <div className="grid p-4 gap-3">
-                <Heading size="sm">{data.title}</Heading>
+                <Heading size="sm">{item.title}</Heading>
                 <Text className="">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </Text>

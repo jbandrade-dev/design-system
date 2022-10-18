@@ -58,15 +58,15 @@ export function MyTabs() {
   });
 
   return (
-    <div className="w-full max-w-md">
+    <div className="w-full max-w-md mob:px-0">
       <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+        <Tab.List className="flex space-x-1 rounded bg-gray-800 p-1">
           {Object.keys(categories).map((category) => (
             <Tab
               key={category}
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-black",
+                  "w-full rounded py-2.5 text-sm font-medium leading-5 text-black",
                   "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
                   selected
                     ? "bg-cyan-500 shadow"
@@ -83,7 +83,7 @@ export function MyTabs() {
             <Tab.Panel
               key={idx}
               className={classNames(
-                "rounded-xl bg-gray-800 p-3",
+                "rounded bg-gray-800 p-3",
                 "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
               )}
             >
@@ -91,7 +91,7 @@ export function MyTabs() {
                 {posts.map((post) => (
                   <li
                     key={post.id}
-                    className="relative rounded-md p-3 hover:bg-cyan-300 hover:text-black"
+                    className="relative rounded p-3 hover:bg-cyan-300 hover:text-black"
                   >
                     <h3 className="text-sm font-medium leading-5">
                       {post.title}
@@ -108,7 +108,7 @@ export function MyTabs() {
                     <a
                       href="#"
                       className={classNames(
-                        "absolute inset-0 rounded-md",
+                        "absolute inset-0 rounded",
                         "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
                       )}
                     />

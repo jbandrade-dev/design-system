@@ -9,7 +9,7 @@ module.exports = {
       screens: {
         mob: "100px",
         tablet: "600px",
-        pc: "1100px",
+        pc: "1000px",
       },
       fontSize: {
         xs: 14,
