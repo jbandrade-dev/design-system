@@ -1,5 +1,3 @@
-import { Avatar } from "./components/Avatar";
-import { ChartPie } from "./components/ChartPie";
 import { Container } from "./components/Container";
 import { MyDisclosure } from "./components/Disclosure";
 import { Subscribe } from "./components/Subscribe";
@@ -11,15 +9,6 @@ import { MyPopover } from "./components/Popover";
 import { MyTabs } from "./components/Tabs";
 import { SignIn } from "./components/SignIn";
 import { Autocomplete } from "./components/Autocomplete";
-import { Card } from "./components/Card";
-
-const dataChart = [
-  { name: "1", value: 27 },
-  { name: "2", value: 25 },
-  { name: "3", value: 20 },
-  { name: "4", value: 15 },
-  { name: "5", value: 13 },
-];
 
 export function App() {
   return (
@@ -49,7 +38,6 @@ export function App() {
         <div className="mt-10">
           <Autocomplete />
         </div>
-        <ChartPie data={dataChart} />
         <SocialLinks size="40" weight="regular" tailwind="flex gap-1 mt-10" />
       </Container>
     </div>

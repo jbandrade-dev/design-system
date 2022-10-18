@@ -8,15 +8,15 @@ export default {
   component: Card,
   args: {
     children: [
-      <a href="#">
+      <div>
         <img src="./devdog.jpg" alt="Doguinho desenvolvedor" />
         <div className="grid p-4 gap-3">
-          <Heading className="">Doguinho dev jr.</Heading>
+          <Heading>Doguinho dev jr.</Heading>
           <Text className="">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </Text>
         </div>
-      </a>,
+      </div>
     ],
   },
   argTypes: {
