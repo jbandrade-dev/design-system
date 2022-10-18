@@ -63,18 +63,23 @@ export function SignIn() {
           </a>
         </Text>
 
-        <Button type="submit" className="mt-2">Entrar</Button>
+        <Button type="submit" className="mt-2">
+          Entrar
+        </Button>
 
-        <Text
-          asChild
-          size="sm"
-          className="flex flex-col items-center"
-        >
-          <a href="" target="_blank">
+        <Text asChild size="sm" className="flex flex-col items-center">
+          <div>
             <span className="text-gray-100">
-              Não tem uma conta? <a className="text-cyan-600 hover:text-cyan-500">Registre-se</a>
+              Não tem uma conta?{" "}
+              <a
+                href=""
+                target="_blank"
+                className="text-cyan-600 hover:text-cyan-500"
+              >
+                Registre-se
+              </a>
             </span>
-          </a>
+          </div>
         </Text>
       </form>
     </div>

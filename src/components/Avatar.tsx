@@ -1,13 +1,29 @@
-interface AvatarProps {
-  src: string;
-  alt: string;
-  tailwind: string;
+import { ReactNode } from "react";
+import { clsx } from "clsx";
+
+export interface AvatarProps {
+  avatar: "circular" | "square";
+  children: ReactNode;
+  className?: string;
 }
 
-export function Avatar({ src, alt, tailwind }: AvatarProps) {
+
+export function Avatar({
+  avatar = "circular",
+  children,
+  className,
+}: AvatarProps) {
   return (
-    <div className={tailwind} title="Avatar">
-      <img src={src} alt={alt} />
+    <div className={clsx("relative w-fit text-gray-100 font-sans", className)}>
+      <img
+        className={clsx("", {
+          'avatarCircular': avatar === "circular",
+          'avatarSquare': avatar === "square",
+        })}
+        src="./avatar.jpg"
+        alt="Avatar de João Andrade"
+      />
+    {children}
     </div>
   );
 }

@@ -23,12 +23,44 @@ body {
   @apply font-bold text-gray-100 hover:text-cyan-300;
 }
 
-.avatarCircle {
-  @apply relative w-14 h-14 rounded-full overflow-hidden;
+.avatarCircular {
+  @apply w-12 h-12 rounded-full;
 }
 
 .avatarSquare {
-  @apply relative w-14 h-14 rounded-md overflow-hidden;
+  @apply w-12 h-12 rounded;
+}
+
+.circularOnTop {
+  @apply top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full
+}
+
+.circularOffTop {
+  @apply top-0 left-7 absolute  w-3.5 h-3.5 bg-red-400 border-2 border-white rounded-full
+}
+
+.squareOnTop {
+  @apply absolute top-0 left-8 transform -translate-y-1/2 w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full
+}
+
+.squareOffTop {
+  @apply absolute top-0 left-8 transform -translate-y-1/2 w-3.5 h-3.5 bg-red-400 border-2 border-white rounded-full
+}
+
+.circularOnDown {
+  @apply bottom-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full
+}
+
+.circularOffDown {
+  @apply bottom-0 left-7 absolute  w-3.5 h-3.5 bg-red-400 border-2 border-white rounded-full
+}
+
+.squareOnDown {
+  @apply absolute bottom-0 left-8 transform translate-y-1/4 w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full
+}
+
+.squareOfDown {
+  @apply absolute bottom-0 left-8 transform translate-y-1/4 w-3.5 h-3.5 bg-red-400 border-2 border-white rounded-full
 }
 
 .swiper {

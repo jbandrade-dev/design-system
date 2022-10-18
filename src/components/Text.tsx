@@ -10,10 +10,10 @@ export interface TextProps {
 }
 
 export function Text({ size = 'md', children, asChild, className }: TextProps) {
-  const Comp = asChild ? Slot : 'span';
+  const Component = asChild ? Slot : 'span';
 
   return (
-    <Comp 
+    <Component 
       className={clsx(
         'text-gray-100 font-sans', 
         {
@@ -25,6 +25,6 @@ export function Text({ size = 'md', children, asChild, className }: TextProps) {
       )}
     >
       {children}
-    </Comp>
+    </Component>
   )
 }

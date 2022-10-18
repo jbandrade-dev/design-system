@@ -4,6 +4,7 @@ import { ArrowBendUpRight, List } from "phosphor-react";
 import { menu } from "./Menu";
 import { Logo } from "./Logo";
 import { Text } from "./Text";
+import { Heading } from "./Heading";
 
 export function MenuExpanded() {
   const [isShowing, setIsShowing] = useState(false);
@@ -37,11 +38,9 @@ export function MenuExpanded() {
         leave="transition ease-in duration-[200ms]"
         leaveFrom="opacity-0 translate-y-100"
         leaveTo="opacity-100 translate-y-full"
-        className="fixed inset-0 h-screen w-screen bg-gray-500 z-50"
+        className="fixed inset-0 bg-gray-500 p-4 z-50"
       >
-        <header id="MenuExpanded" className="flex justify-between p-6 z-50">
-          <div />
-
+        <header id="MenuExpanded" className="flex gap-1 wrapper justify-between items-center h-20 z-50">
           <Logo />
 
           <button
@@ -51,23 +50,23 @@ export function MenuExpanded() {
             onClick={closeMenu}
           >
             <ArrowBendUpRight
-              className="text-gray-900"
-              size={30}
+              className="text-gray-100 hover:text-cyan-300"
+              size={40}
               weight="bold"
             />
           </button>
         </header>
 
-        <menu className="">
-          <ul className="">
+        <menu className="flex justify-center mt-16">
+          <ul className="flex flex-col gap-2 items-center">
             {menu.map((item) => {
               return (
-                <li key={item.name} className="">
+                <li key={item.name} className="itemMenuExpanded">
                   <a
                     href="#"
                     onClick={() => setIsShowing((isShowing) => !isShowing)}
                   >
-                    <Text size="sm">{item.name}</Text>
+                    <Heading>{item.name}</Heading>
                   </a>
                 </li>
               );

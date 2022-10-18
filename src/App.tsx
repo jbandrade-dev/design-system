@@ -23,32 +23,32 @@ const dataChart = [
 
 export function App() {
   return (
-    <div className="flex wrapper flex-col justify-center gap-10">
+    <div className="wrapper ">
       <Container>
-        <Card/>
-        <div className="flex flex-col gap-10">
+        <div className="grid grid-cols-2 gap-10 ">
           <SignIn />
           <Subscribe />
         </div>
 
-        <div className="flex flex-col gap-10">
-          <Avatar src="/avatar.jpg" alt="" tailwind="avatarCircle" />
-          <Avatar src="/avatar.jpg" alt="" tailwind="avatarSquare" />
-        </div>
-
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 mt-10">
           <MyModal />
           <MyPopover />
         </div>
 
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 mt-10">
           <Select />
           <MyDisclosure />
         </div>
 
-        <Slide />
-        <MyTabs />
-        <Autocomplete />
+        <div className="mt-10">
+          <Slide />
+        </div>
+        <div className="mt-10">
+          <MyTabs />
+        </div>
+        <div className="mt-10">
+          <Autocomplete />
+        </div>
         <ChartPie data={dataChart} />
         <SocialLinks size="40" weight="regular" tailwind="flex gap-1 mt-10" />
       </Container>
