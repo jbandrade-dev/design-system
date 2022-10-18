@@ -5,7 +5,7 @@ import { rest } from 'msw'
 import { SignIn } from './SignIn'
 
 export default {
-  title: 'Pages/Sign in',
+  title: 'Components/Sign in',
   component: SignIn,
   args: {},
   argTypes: {},
