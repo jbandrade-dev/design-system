@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { ArrowBendUpRight, List } from "phosphor-react";
 import { menu } from "./Menu";
-import { Logo } from "./Logo";
-import { Text } from "./Text";
 import { Heading } from "./Heading";
 
 export function MenuExpanded() {
@@ -24,7 +22,9 @@ export function MenuExpanded() {
       <button
         aria-expanded="false"
         aria-label="Abrir menu"
-        className={isShowing ? "hidden" : "pc:hidden text-white hover:text-cyan-300 "}
+        className={
+          isShowing ? "hidden" : "pc:hidden text-white hover:text-cyan-300 "
+        }
         onClick={openMenu}
       >
         <List size={45} />
@@ -40,8 +40,13 @@ export function MenuExpanded() {
         leaveTo="opacity-100 translate-y-full"
         className="fixed inset-0 bg-gray-500 p-4 z-50"
       >
-        <header id="MenuExpanded" className="flex gap-1 wrapper justify-between items-center h-20 z-50">
-          <Logo />
+        <header
+          id="MenuExpanded"
+          className="flex gap-1 wrapper justify-between items-center h-20 z-50"
+        >
+          <div className="text-gray-200 rounded-md mb-1 font-semibold text-lg">
+            Navbar
+          </div>
 
           <button
             className=""

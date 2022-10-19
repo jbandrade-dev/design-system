@@ -12,6 +12,8 @@ module.exports = {
         pc: "1000px",
       },
       fontSize: {
+        "3xs": 10,
+        "2xs": 12,
         xs: 14,
         sm: 16,
         md: 18,

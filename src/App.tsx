@@ -9,6 +9,7 @@ import { MyPopover } from "./components/Popover";
 import { MyTabs } from "./components/Tabs";
 import { SignIn } from "./components/SignIn";
 import { Autocomplete } from "./components/Autocomplete";
+import { Video } from "./components/Video";
 
 export function App() {
   return (
@@ -17,6 +18,10 @@ export function App() {
         <div className="grid grid-cols-2 gap-10 ">
           <SignIn />
           <Subscribe />
+        </div>
+
+        <div className="flex mt-10">
+        <Video/>
         </div>
 
         <div className="flex flex-col gap-10 mt-10">
