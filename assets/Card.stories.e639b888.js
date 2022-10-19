@@ -1,0 +1,2 @@
+import{C as t,D as e}from"./Card.aa89e9a8.js";import{j as r}from"./jsx-runtime.4268c200.js";import"./index.92244029.js";import"./iframe.9e5b487d.js";const i={title:"Components/Card",component:t,args:{children:[r(e,{})]},argTypes:{children:{table:{disable:!0}},data:{table:{disable:!0}}}},l={},n=["Default"];export{l as Default,n as __namedExportsOrder,i as default};
+//# sourceMappingURL=Card.stories.e639b888.js.map

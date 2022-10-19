@@ -1,0 +1,2 @@
+var l=Object.defineProperty;var f=(e,r)=>l(e,"name",{value:r,configurable:!0});import{r as n}from"./index.92244029.js";import{o as m}from"./render.b81dc2cd.js";function E(e,r){let t=n.exports.useRef([]),o=m(e);n.exports.useEffect(()=>{let u=[...t.current];for(let[c,s]of r.entries())if(t.current[c]!==s){let i=o(r,u);return t.current=r,i}},[o,...r])}f(E,"m");export{E as m};
+//# sourceMappingURL=use-watch.41c58532.js.map

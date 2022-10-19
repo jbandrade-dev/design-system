@@ -1,0 +1,2 @@
+var t=Object.defineProperty;var a=(r,s)=>t(r,"name",{value:s,configurable:!0});import{M as n}from"./Menu.0d34a68c.js";import{M as m}from"./MenuExpanded.e09c20bd.js";import{a as o,j as e}from"./jsx-runtime.4268c200.js";function l(){return o("nav",{className:"flex gap-1 wrapper justify-between items-center h-20",children:[e("div",{className:"text-gray-200 rounded-md mb-1 font-semibold text-lg",children:"Navbar"}),e(m,{}),e(n,{})]})}a(l,"Navbar");export{l as N};
+//# sourceMappingURL=Navbar.e98e9fe7.js.map

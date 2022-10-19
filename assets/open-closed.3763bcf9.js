@@ -1,0 +1,2 @@
+var a=Object.defineProperty;var r=(e,t)=>a(e,"name",{value:t,configurable:!0});import{r as o,R as l}from"./index.92244029.js";let n=o.exports.createContext(null);n.displayName="OpenClosedContext";var s=(e=>(e[e.Open=0]="Open",e[e.Closed=1]="Closed",e))(s||{});function c(){return o.exports.useContext(n)}r(c,"s");function d({value:e,children:t}){return l.createElement(n.Provider,{value:e},t)}r(d,"C");export{d as C,s as p,c as s};
+//# sourceMappingURL=open-closed.3763bcf9.js.map

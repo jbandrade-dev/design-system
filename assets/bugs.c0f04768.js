@@ -1,0 +1,2 @@
+var r=Object.defineProperty;var t=(n,e)=>r(n,"name",{value:e,configurable:!0});function f(n){let e=n.parentElement,l=null;for(;e&&!(e instanceof HTMLFieldSetElement);)e instanceof HTMLLegendElement&&(l=e),e=e.parentElement;let i=(e==null?void 0:e.getAttribute("disabled"))==="";return i&&u(l)?!1:i}t(f,"r");function u(n){if(!n)return!1;let e=n.previousElementSibling;for(;e!==null;){if(e instanceof HTMLLegendElement)return!1;e=e.previousElementSibling}return!0}t(u,"i");export{f as r};
+//# sourceMappingURL=bugs.c0f04768.js.map

@@ -1,0 +1,2 @@
+import{M as t}from"./Menu.0d34a68c.js";import"./Text.844eb275.js";import"./index.module.681c5c6b.js";import"./index.92244029.js";import"./iframe.9e5b487d.js";import"./clsx.m.256e9345.js";import"./jsx-runtime.4268c200.js";const i={title:"Components/Menu",component:t,args:{},argTypes:{}},a={},u=["Default"];export{a as Default,u as __namedExportsOrder,i as default};
+//# sourceMappingURL=Menu.stories.91734b42.js.map
