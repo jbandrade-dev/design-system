@@ -1,16 +1,15 @@
 
 
 <p align="center">
-  <a href="#-layout">Layout</a> •
-  <a href="#-technologies">Technologies</a> •
-  <a href="#-license">License</a>
+  <a href="#-about">About</a> •
+  <a href="#-technologies">Technologies</a>
 </p>
 
 <p align="center">
   <img src=".github/mockup.png">
 </p>
 
-## 👩‍💻 About the project
+## 👩‍💻 About
 
 ...
 
